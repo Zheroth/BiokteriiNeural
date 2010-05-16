@@ -131,6 +131,9 @@ class Cell(Sprite):
                 self.posX+=self.transVelX
                 self.posY+=self.transVelY
 
+            if self.status == "defended":
+                self.velX -= 0.1
+
             if self.status=="BeingEaten":
                 self.deltaRot=0
                 self.velX=0

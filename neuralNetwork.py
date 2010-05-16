@@ -99,9 +99,9 @@ def create_trained_network(trainingSet):
     print "params"
     print fnn.params
 
-    trainer = BackpropTrainer( fnn, dataset=trndata, momentum=0.1, verbose=True, weightdecay=0.03)
+    trainer = BackpropTrainer( fnn, dataset=trndata, momentum=0.1, verbose=True, weightdecay=0.01)
 
-    trainer.trainUntilConvergence(maxEpochs=500,verbose=True)
+    trainer.trainUntilConvergence(maxEpochs=1000,verbose=True)
 
 
     print "params"
